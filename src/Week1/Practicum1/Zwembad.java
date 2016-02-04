@@ -7,7 +7,6 @@ public class Zwembad {
     private double breedte = 0;
     private double lengte = 0;
     private double diepte = 0;
-    private double inhoud = 0;
 
     public Zwembad(double br, double ln, double dp) {
         breedte = br;
@@ -32,8 +31,7 @@ public class Zwembad {
     }
 
     public double inhoud() {
-        inhoud = lengte * breedte * diepte;
-        return inhoud;
+        return lengte * breedte * diepte;
     }
 
     public void setBreedte(double br) {
