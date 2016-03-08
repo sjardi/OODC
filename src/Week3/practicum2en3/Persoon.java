@@ -37,22 +37,20 @@ public class Persoon {
     }
 
     public Game zoekGameOpNaam(String s) {
-        Game game = null;
+        Game gevondenGame = null;
         for (Game g : games) {
-            if (g.getNaam() == s) {
-                game = g;
+            if (g.getNaam().equals(s)) {
+                gevondenGame = g;
             }
         }
-        return game;
+        return gevondenGame;
     }
 
     public String toString() {
-//        System.out.print(naam + " heeft een budget van " + budget + " en bezit de volgende games:\n\t");
-//        games.forEach(game -> System.out.print(game));
-        System.out.print(naam + " heeft een budget van " + budget + " en bezit de volgende games:\n");
+        String s = naam + " heeft een budget van " + budget + " en bezit de volgende games:\n";
         for (Game g : games) {
-            System.out.println(g);
+            s += g.toString();
         }
-        return null;
+        return s;
     }
 }

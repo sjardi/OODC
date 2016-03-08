@@ -41,6 +41,6 @@ public class Game {
     }
 
     public String toString() {
-        return "\t"+naam + ", uitgegeven in " + releaseJaar + "; nieuwprijs: " + nieuwprijs + " nu voor: \u20AC" + huidigeWaarde();
+        return "\t"+naam + ", uitgegeven in " + releaseJaar + "; nieuwprijs: " + nieuwprijs + " nu voor: \u20AC" + huidigeWaarde() + "\n";
     }
 }
