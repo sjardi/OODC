@@ -55,7 +55,7 @@ public class BoekingenApp extends Application implements EventHandler<ActionEven
         root.getChildren().addAll(hb1, hb2, hb3, hb4, hb5, hb6);
         Scene scene = new Scene(root, 350, 175);
 
-        primaryStage.setTitle("Tweepersoonsboekingen");
+        primaryStage.setTitle("Tweepersoonsboekinge");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
