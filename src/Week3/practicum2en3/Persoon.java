@@ -27,9 +27,8 @@ public class Persoon {
 
     public boolean verkoop(Game g, Persoon koper) {
         boolean statusVerkoop = false;
-        if (games.contains(g) && !koper.games.contains(g) && koper.budget >= g.huidigeWaarde()) {
+        if (games.contains(g) && koper.koop(g)) {
             games.remove(g);
-            koper.games.add(g);
             budget += g.huidigeWaarde();
             statusVerkoop = true;
         }

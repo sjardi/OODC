@@ -33,7 +33,7 @@ public class Game {
             Game andereGame = (Game) andereObject;
 
             if (this.naam.equals(andereGame.naam) &&
-                    this.releaseJaar == andereGame.releaseJaar) {
+                    this.releaseJaar == andereGame.releaseJaar && this.nieuwprijs == andereGame.nieuwprijs) {
                 gelijkeObjecten = true;
             }
         }
