@@ -33,7 +33,7 @@ public class BoekingenApp extends Application implements EventHandler<ActionEven
         Label label2 = new Label("naam:");
         TextField tf2 = new TextField();
         tf2.setPrefWidth(300);
-        tf2.setAlignment();
+//        tf2.setAlignment();
         hb2.getChildren().addAll(label2, tf2);
         hb2.setPrefWidth(350);
 
