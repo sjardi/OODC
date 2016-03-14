@@ -5,7 +5,7 @@ package proeftentamen.opdracht1;
  */
 public class Opleiding {
     private String naam;
-    private String variant;
+    private String variant = "voltijd";
     private int studieduur;
     private int minimumECs;
 
@@ -13,7 +13,7 @@ public class Opleiding {
         naam = nm;
         studieduur = std;
         minimumECs = mEs;
-        variant = "voltijd";
+//        variant = "voltijd";
     }
 
     public Opleiding(String nm, String v, int std, int mEs) {
