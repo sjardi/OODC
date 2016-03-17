@@ -24,6 +24,7 @@ public class Main{
             bestemmingsBestand.createNewFile();
         } catch (FileAlreadyExistsException fae) {
             System.out.println("Bestemmingsbestand bestaat al!");
+			System.exit(0);
         }
 
         double koers = 1.0;
@@ -32,6 +33,7 @@ public class Main{
             koers = scanner.nextDouble();
         } catch (InputMismatchException ime) {
             System.out.println("Ongeldige invoer!");
+			System.exit(0);
         }
 
         scanner.close();
