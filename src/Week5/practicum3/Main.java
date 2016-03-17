@@ -12,14 +12,14 @@ public class Main{
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Naam bronbestand: ");
-        String naamBronBestand = scanner.nextLine();
+        System.out.print("Naam bronbestand (zonder .txt): ");
+        String naamBronBestand = scanner.nextLine() + ".txt";
 
         // Geeft geen exception als bestand al bestaat, waarom?
         File bestemmingsBestand = null;
         try {
-            System.out.print("Naam bestemmingsbestand: ");
-            String naamBestemmingsBestand = scanner.nextLine();
+            System.out.print("Naam bestemmingsbestand (zonder .txt): ");
+            String naamBestemmingsBestand = scanner.nextLine() + ".txt";
             bestemmingsBestand = new File("src/Week5/practicum3/" + naamBestemmingsBestand);
             bestemmingsBestand.createNewFile();
         } catch (FileAlreadyExistsException fae) {
@@ -54,7 +54,7 @@ public class Main{
 
                 pwBestemming.printf(naam + " : %.2f%n", omgezettePrijs);
 
-                System.out.printf(naam + " : " + prijs + " : %.2f%n", omgezettePrijs);
+//                System.out.printf(naam + " : " + prijs + " : %.2f%n", omgezettePrijs);
 
                 regelBron = brBron.readLine();
             }

@@ -26,7 +26,7 @@ public class Student {
         if (mijnOpleiding == null) {
             s = s + "nog geen opleiding";
         } else {
-            s = s + "de opleiding " + mijnOpleiding;
+            s = s + "de opleiding " + getOpleiding();
         }
         return s;
     }
